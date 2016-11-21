@@ -1,0 +1,22 @@
+//css without inline
+
+.title{
+	background-color: rgb(118, 171, 219);
+	background-position: initial initial;
+	 background-repeat: initial initial;
+}
+.input{
+	opacity: 1;
+	background-color: rgb(255, 255, 255);
+	background-position: initial initial;
+	background-repeat: initial initial;
+}
+.button{
+	cursor: default;
+	text-align: center
+}
+#paragraph{
+	margin: 10px; 
+	color: red; 
+	text-align: center;
+}
