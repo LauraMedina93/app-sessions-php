@@ -5,7 +5,7 @@ if(!isset($_SESSION)){
 require 'lib_sql.php';
 
 $consultas = array();
-if ($_SESSION['name']){
-    $consultas = getConsult($_SESSION['name']);
+if ($_SESSION['id']){
+   $consultas = getConsult($_SESSION['id']);
 }
-?>
+

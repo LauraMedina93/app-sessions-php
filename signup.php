@@ -22,4 +22,4 @@ if(empty($validate)){
 }else{
     header('Location: register.php?error='.  implode('|', $validate));
 }
-?>
+

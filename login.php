@@ -16,4 +16,4 @@ if(isset($_POST['name']) && isset($_POST['password']) && (!empty($_POST['name'])
         Header('Location: index.php?error=login');
   }
 
-?>
+

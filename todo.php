@@ -23,7 +23,7 @@
         <form action="addConsult.php" method="POST" id="form-login">
             <div class="form-group">
               <input id="task" class="inline-input input" name="consult" placeholder="Nueva Consulta">
-               <button class="inline-button">Agregar consulta</button>
+               <button type="submit" class="inline-button">Agregar consulta</button>
             </div>
         </form>
         <form action="logout.php" method="POST" id="salir">
