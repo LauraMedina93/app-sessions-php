@@ -18,7 +18,7 @@
 <div id="logmsk" style="display: block;">
     <div id="userbox">
         <?php if (isset($_GET['error'])):?>
-        <p id="paragraph" class= "hide"> Error: <?php print($_GET['error'])?>!</p>
+        <p id="paragraph" class= "hide"> Error: <?php echo ($_GET['error'])?>!</p>
         <?php endif?>
         <h1 id="signup" class= "title">Iniciar Sesión</h1>
         <form action="login.php" method="POST" id="form-login">

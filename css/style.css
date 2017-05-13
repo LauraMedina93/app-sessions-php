@@ -151,6 +151,41 @@ button, #signupb {
     outline: black;
     cursor: pointer;
 }
+
+#redirect {
+    margin: 0px;
+    padding: 10px 0px 9px;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    background: #76ABDB;
+    font-size: 22px;
+}
+
+button, #redirect {
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    display: -webkit-box;
+    line-height: -20px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #f37676;
+    border-color: #E78282;
+    font-weight: normal;
+    margin: 3px 0 0 0;
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    bottom: 9px;
+    font-size: 18px;
+    width: 103px;
+    height: 40px;
+    outline: black;
+    cursor: pointer;
+}
+
 button.inline-button {
     position: relative;
     float: right;
@@ -661,3 +696,5 @@ body,input,select,td,textarea {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+

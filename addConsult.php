@@ -9,7 +9,6 @@ if (isset($_POST['consult']) && !empty($_POST['consult'])){
     Header('Location: todo.php');
 }
  else {
- 	echo "stringNOANDA";
     header('Location: todo.php?error="invalid consult"');
 }
 

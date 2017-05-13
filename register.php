@@ -19,7 +19,7 @@
 <div id="logmsk" style="display: block;">
     <div id="userbox">
         <?php if (isset($_GET['error'])):?>
-        <p id="paragraph"> Error: <?php print($_GET['error'])?>!</p>
+        <p id="paragraph"> Error: <?php echo ($_GET['error'])?>!</p>
         <?php endif?>
         <h1 id="signup" class= "title">Iniciar Sesión</h1>
         <form action="signup.php" method="POST" id="form-login">
@@ -28,7 +28,8 @@
             <input id="duplicated_pass" name="duplicated_password" class="input" type="password" placeholder=" Confirm Password">
             <input type="submit" id="signupb" class="button" value="Confirmar"/>
         </form>
-        <a href="index.php" class="signup">Log In</a>
+        <!--> Esto hay que editar porque la salida no es la esperada para el botón - ID o Class mal - Redirige bien-->
+        <input id="redirect" class="button" onclick="location.href='index.php'" value="Log In"/>
     </div>
     <script src="js/index.js"></script>
 </div>
