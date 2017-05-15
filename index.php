@@ -26,7 +26,7 @@
             <input id="pass" name="password" class="input" type="password" placeholder="Password">
             <input type="submit" id="signupb" class="button" value="Ingresar"/>
         </form>
-        <a href="register.php" class="signup">Sign Up</a>
+        <input id="redirect" class="button" onclick="location.href='register.php'" value="Sign Up"/>
     </div>
     <script src="js/index.js"></script>
 </div>

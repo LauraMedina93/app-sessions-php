@@ -21,14 +21,14 @@
         <?php if (isset($_GET['error'])):?>
         <p id="paragraph"> Error: <?php echo ($_GET['error'])?>!</p>
         <?php endif?>
-        <h1 id="signup" class= "title">Iniciar Sesión</h1>
+        <h1 id="signup" class= "title">Registrarse</h1>
         <form action="signup.php" method="POST" id="form-login">
             <input id="name" name="name" class="input" placeholder="Usuario">
             <input id="pass" name="password" class="input" type="password" placeholder="Password">
-            <input id="duplicated_pass" name="duplicated_password" class="input" type="password" placeholder=" Confirm Password">
+            <input id="pass" name="duplicated_password" class="input" type="password" placeholder=" Confirm Password">
             <input type="submit" id="signupb" class="button" value="Confirmar"/>
         </form>
-        <!--> Esto hay que editar porque la salida no es la esperada para el botón - ID o Class mal - Redirige bien-->
+
         <input id="redirect" class="button" onclick="location.href='index.php'" value="Log In"/>
     </div>
     <script src="js/index.js"></script>
