@@ -2,10 +2,10 @@
 -- version 4.5.1
 -- http://www.phpmyadmin.net
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 17-11-2016 a las 01:26:54
--- Versión del servidor: 10.1.13-MariaDB
--- Versión de PHP: 5.6.23
+-- Host: 127.0.0.1
+-- Generation Time: May 19, 2017 at 12:02 AM
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 7.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,31 +17,34 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `consultas-bd`
+-- Database: `consultas-bd`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `consultas`
+-- Table structure for table `consultas`
 --
 
 CREATE TABLE `consultas` (
   `id` int(10) NOT NULL,
+  `idUsuario` int(50) NOT NULL,
   `nomConsulta` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `consultas`
+-- Dumping data for table `consultas`
 --
 
-INSERT INTO `consultas` (`id`, `nomConsulta`) VALUES
-(1, 'Coca pasta base');
+INSERT INTO `consultas` (`id`, `idUsuario`, `nomConsulta`) VALUES
+(1, 9, 'fsdfsdffgfd'),
+(5, 9, 'FFDFDF'),
+(6, 9, 'los piojos');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Table structure for table `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -51,53 +54,52 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Dumping data for table `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nomUsuario`, `password`) VALUES
-(1, 'chamo', '1234'),
-(2, 'dario', ''),
-(3, 'chamo', ''),
-(4, 'chamo', 'j34242'),
-(5, 'chamo', 'j34242'),
-(6, 'chamo', 'j34242'),
-(7, 'chamo', 'j34242'),
-(8, 'chamo', 'kjhjec3389u');
+(9, 'laura', '81dc9bdb52d04dc20036dbd8313ed055');
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `consultas`
+-- Indexes for table `consultas`
 --
 ALTER TABLE `consultas`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idUsuario` (`idUsuario`);
 
 --
--- Indices de la tabla `usuarios`
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `consultas`
+-- AUTO_INCREMENT for table `consultas`
 --
 ALTER TABLE `consultas`
-  ADD CONSTRAINT `consultas_ibfk_1` FOREIGN KEY (`id`) REFERENCES `usuarios` (`id`);
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `consultas`
+--
+ALTER TABLE `consultas`
+  ADD CONSTRAINT `consultas_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
