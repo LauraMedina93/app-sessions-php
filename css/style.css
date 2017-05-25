@@ -255,7 +255,7 @@ button, #createCons {
 .tweets{
     position: absolute;
     width: 480px;
-    height: inherit;
+    height: initial;
     background: whitesmoke;
     top: 270px;
     margin-top: -174px;
