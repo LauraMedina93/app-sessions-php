@@ -310,14 +310,14 @@ button, #createCons {
     font-size: 16px;
     text-align: left;
 }
-button, #back {
+#back {
     border-radius: 2px;
     background: #76abdb;
     font-weight: normal;
-    margin: 160px 0 0 0;
+    margin: 3px 0 0 0;
     color: rgb(255, 255, 255);
     position: absolute;
-    left: 173px;
+    left: 10px;
     top: 1px;
     font-size: 18px;
     width: 103px;
@@ -338,7 +338,7 @@ button, #back {
     background-position: center center;
     width: 28%;
     left: 395px;
-    margin-top: 60px;
+    margin-top: -38px;
 
     @include transition(.5s opacity ease);
         opacity: .95;

@@ -51,8 +51,9 @@
         <form action="logout.php" method="POST" id="salir">
             <button class="salida">Salir</button>
         </form>
+        <input class="button" id="back" onclick="location.href='menu.php'" value="Volver"/>
     </div>
-    <input class="button" id="back" onclick="location.href='menu.php'" value="Volver"/>
+    
      </div>
 <?php else: ?>
 <?php Header('Location: index.php')?>
