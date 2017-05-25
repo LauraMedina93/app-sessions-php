@@ -22,7 +22,7 @@
     <div class="tweet">
     <h1 accesskey="index.php" id="signup" class= "title">Nueva Consulta</h1>
       <form id="form-login" action="" method="GET">
-        <button type="submit" class="searchTweet"><span class="assistive-text">Buscar</span></button>
+        <button type="submit" class="searchTweet"></button>
         <input type="text" id="q" name="q" value="<?php echo @$_GET['q'] ?>" placeholder="Introduce una Búsqueda" required>
       </form>
       <?php if(isset($results)): ?>

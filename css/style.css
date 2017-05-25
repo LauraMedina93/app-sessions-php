@@ -255,7 +255,7 @@ button, #createCons {
 .tweets{
     position: absolute;
     width: 480px;
-    height: 220px;
+    height: inherit;
     background: whitesmoke;
     top: 270px;
     margin-top: -174px;
@@ -271,7 +271,7 @@ button, #createCons {
 }
 .content-tweet{
     width: 480px;
-    height: 70px;
+    height: 100px;
 }
 .tweet-user-image{
     float: left;
@@ -346,10 +346,11 @@ button, #createCons {
             opacity: 1;
         }
 }
-.assistive-text {
-    position: absolute;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
+.error-message{
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-top: 100px;
+    text-align: center
 }
 button.inline-button {
     position: relative;
