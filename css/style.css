@@ -3,7 +3,6 @@
  * Copyright 2014 Kohei Shingai.
  * Licensed under MIT 
  */
-
 #sumsk {
     position: absolute;
     width: 100%;
@@ -122,7 +121,6 @@ input.inline-input {
     margin: 0px;
     padding: 10px 0px 9px;
     color: rgb(255, 255, 255);
-    font-size: 32px;
     width: 100%;
     text-align: center;
     font-weight: normal;
@@ -153,11 +151,8 @@ button, #signupb {
 }
 
 button, #redirect {
-    background: #f8f8f8;
     border: 1px solid #c6c6c6;
     display: -webkit-box;
-    line-height: -20px;
-    -webkit-border-radius: 2px;
     border-radius: 2px;
     background: #76abdb;
     border-color: #182eca;
@@ -174,6 +169,188 @@ button, #redirect {
     cursor: pointer;
 }
 
+.salida{
+    border-radius: 2px;
+    background: #76abdb;
+    font-weight: normal;
+    margin: 3px 0 0 0;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 370px;
+    top: 1px;
+    font-size: 18px;
+    width: 103px;
+    height: 40px;
+    outline: black;
+    cursor: pointer;
+    border: 1px solid #c6c6c6;
+    display: -webkit-box;
+}
+
+button, #tt {
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    background: #2ba5b9;
+    border-color: #095252;
+    font-weight: normal;
+    margin: 3px 0 0 0;
+    color: #fff;
+    position: absolute;
+    left: 90px;
+    bottom: 80px;
+    font-size: 18px;
+    width: 300px;
+    height: 40px;
+    outline: black;
+    cursor: pointer;
+}
+
+button, #seeCons {
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    background: #2ba5b9;
+    border-color: #095252;
+    font-weight: normal;
+    margin: 3px 0 0 0;
+    color: #fff;
+    position: absolute;
+    left: 90px;
+    top: 180px;
+    font-size: 18px;
+    width: 300px;
+    height: 40px;
+    outline: black;
+    cursor: pointer;
+}
+
+button, #createCons {
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    background: #2ba5b9;
+    border-color: #095252;
+    font-weight: normal;
+    margin: 3px 0 0 0;
+    color: #fff;
+    position: absolute;
+    left: 90px;
+    top: 100px;
+    font-size: 18px;
+    width: 300px;
+    height: 40px;
+    outline: black;
+    cursor: pointer;
+}
+.tweet{
+ position: absolute;
+    width: 480px;
+    height: 380px;
+    background: whitesmoke;
+    top: 50%;
+    margin-top: -174px;
+    left: 50%;
+    margin-left: -240px;
+    box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.45);
+    font:  "Open Sans",sans-serif;
+}
+.tweets{
+    position: absolute;
+    width: 480px;
+    height: 220px;
+    background: whitesmoke;
+    top: 270px;
+    margin-top: -174px;
+    left: 50%;
+    margin-left: -240px;
+}
+.tweet-text{
+    font-size: 12px;
+    font-family: sans-serif;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-left: 58px;
+}
+.content-tweet{
+    width: 480px;
+    height: 70px;
+}
+.tweet-user-image{
+    float: left;
+    margin-right: 10px;
+    @include border-radius(6px);
+}
+.tweet-user-link{
+    font-weight: bold;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+#q{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 0 8px;
+    margin: 10px auto;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid silver;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    color: #838383;
+    width: 409px;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+    text-align: left;
+}
+button, #back {
+    border-radius: 2px;
+    background: #76abdb;
+    font-weight: normal;
+    margin: 160px 0 0 0;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 173px;
+    top: 1px;
+    font-size: 18px;
+    width: 103px;
+    height: 40px;
+    outline: black;
+    cursor: pointer;
+    border: 1px solid #c6c6c6;
+    display: -webkit-box;
+}
+.searchTweet{
+    color: rgba(66, 134, 237, 0.78);
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACgUlEQVRYR81X21XCQBA1wL92YKhAqMDI41upQFKBWIFagViBsQLlm8eJFRArADuAfx7ey9lwlmWT3aA5uOfkEJKdmTszd2cmzknK8jzPLRaL19jiOY7j4rcitkfr9XqK+3C5XPbCMOT9QcvRSQnDDzDattEKMAGAPB0CZA9AvV6/gdFXGD+zMR7vAYgZ7v3hcPiRRW4HQK1WaxcKhdcsCtS9q9XKH41Gga2OLQB6Dq/fVUF49o3nXVxhv9+P+L7ZbFbw3MPVwfNzjUzLNhIbACLnY03Y7weDQTfNm0aj0cH7Z3kP0wFOVG04sQEA7wMYv5WV4H819tgUThGRsQLiDVEwktih96VSaaIYMXqugtJFYrFYlE1RcFRB5hzIXZPXuveI5FThhNERAuCxYbGJl1EoCZwmCj1wiMc6cREAcxdXuJMsuVe1argQAUDVBGAtb4CAtjrapgQOZdLHCGQSMAHJqs8BcSKE/SJW/JcpAKG/QOhtenXg/wUJdyoZ2yxQl02hTjiGE9G2rU/U8QvR0UsxAYhyzE53qtTzDtLxkpYOkPiO3VLZM0cZrpjKMGVs2vEU+7qYEz7ldoy+f4nnbMeuBqB1Nf3zgUQCw+PtmzqqdiSDYKCmw+JUzBkpXA/xXpsxLW0ofVRnhCQQMPSGAeSROVcLG2U4OSVxKbXuC3Kym3H8cuOKyQqHe3IjBNk+ZLKJhhRqCB0AhK868avGkxSRlOGWgFsAzAl6s3IBQMW6CUnYjAQIRjA/AFSumzUFJ2Y41lc8IblFIA4xIkE+sGbsLXbe3AGAyGf4vgzlli8hyT8CNJZU6nPngBxz3bcD3vdyT4EKAj2EH0GcwHo4De0fNuF84QCBaGUAAAAASUVORK5CYII=);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 28%;
+    left: 395px;
+    margin-top: 60px;
+
+    @include transition(.5s opacity ease);
+        opacity: .95;
+        &:hover {
+            opacity: 1;
+        }
+}
+.assistive-text {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
 button.inline-button {
     position: relative;
     float: right;

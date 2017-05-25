@@ -9,7 +9,7 @@ if(isset($_POST['name']) && isset($_POST['password']) && (!empty($_POST['name'])
         $_SESSION['name'] = $user['nomUsuario'];
         $_SESSION['id']   = $user['id'] ;
 
-        Header('Location: todo.php');
+        Header('Location: menu.php');
         }elseif (is_null($user) || (is_null($password))) {
             Header('Location: index.php?error= Los datos ingresados no son correctos');
         }        
