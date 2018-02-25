@@ -7,6 +7,7 @@
 	// activar la caché?
 	define('CACHE_ENABLED', true);
 
+
 	// Parsear el texto del tweet, añadiendo menciones, links y hashtags
 	function tweet_text($text) {
 		// urls: lo primero para que no conviertan los links posteriores

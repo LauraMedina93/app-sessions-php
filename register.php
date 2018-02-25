@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
 
-  <title>Registrarse</title>
+  <title>Inicio de Sesión</title>
 
   <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
   <link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
