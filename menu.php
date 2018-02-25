@@ -14,20 +14,21 @@
 </head>
 
 <body>
-    
+
 <?php if (isset($_SESSION['name'])):?>
 <div id="logmsk" style="display: block;">
-    
+
     <div id="userbox">
         <h1 accesskey="index.php" id="signup" class= "title">Bienvenid@: <b><?php echo $_SESSION['name'];?></b> </h1>
         <input id="createCons" class="button" onclick="location.href='todo.php'" value="Hacer una Consulta"/>
         <input id="seeCons" class="button" onclick="location.href='todo.php'" value="Ver mis Consultas"/>
+        <!--This option is deprecated
         <input id="tt" class="button" onclick="location.href='#'" value="Trending Topics"/>
-
+        -->
         <form action="logout.php" method="POST" id="salir">
             <button class="salida">Salir</button>
         </form>
-        
+
     </div>
 </div>
 <?php else: ?>
